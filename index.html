@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazonclone</title>
+   <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    <header>
+        <!--navbar-->
+<div class="navbar">
+    <div class="navlogo border ">
+        <div class="logo">
+            <a href="index.html" target="_main"><img src="amazon_logo.png"></a>
+        </div>
+     </div>
+    <div class="navaddress border">
+        <p class="addfirst">Deliver to</p>
+        <div class="addressicon">
+            <svg width="25px" height="30p" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"> 
+                <path fill="currentColor" d="M800 416a288 288 0 1 0-576 0c0 118.144 94.528 272.128 288 456.576C705.472 688.128 800 534.144 800 416M512 960C277.312 746.688 160 565.312 160 416a352 352 0 0 1 704 0c0 149.312-117.312 330.688-352 544"/> 
+                <path fill="currentColor" d="M512 512a96 96 0 1 0 0-192a96 96 0 0 0 0 192m0 64a160 160 0 1 1 0-320a160 160 0 0 1 0 320"/> 
+            </svg>
+            <p class="addsecond">Nepal</p> 
+            
+        </div>
+     </div>
+
+
+    <div class="navsearch">
+        <div class="select">
+           <p>All</p> <svg width="25" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                <path fill="currentColor" d="m8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71"/> 
+            </svg>
+            </div> 
+        <input placeholder="Search Amazon" class="search-input">
+        <div class="searchicon">
+            <svg width="30px" height="40px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"> 
+                <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34M208 336c-70.7 0-128-57.2-128-128c0-70.7 57.2-128 128-128c70.7 0 128 57.2 128 128c0 70.7-57.2 128-128 128"/> 
+            </svg>
+        </div>
+    </div>
+    <!--next box-->
+    <div class="language border">
+        <div class="navlan">
+        <div class="flagicon"></div>
+
+        <p>Eng</p>
+        <svg width="25" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+            <path fill="currentColor" d="m8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71"/> 
+        </svg></div>
+        <div class="langdropdown">
+            <div class="langcontent">
+                <div class="en">
+                <p>Change language  <a class="small">Learn more</a> </p><br>
+                <label for="radio1">
+                <input type="radio"value="eng" name="language" id="1"><a>English-En</a></label><br>
+                </div>
+                <div class="other">
+                <label for="2">
+                <input type="radio"value="es" name="language" id="2"><a>español - ES</a></label><br>
+                <label for="3">
+                <input type="radio"value="ar" name="language" id="3"><a>- لعربية اAR</a></label><br>
+                <label for="4">
+                <input type="radio"value="de" name="language" id="4"><a>Deutsch - DE</a></label><br>
+                <label for="5">
+                <input type="radio"value="he" name="language" id="5"><a>עברית - HE</a></label><br>
+                <label for="6">
+                <input type="radio"value="ko" name="language" id="6"><a>한국어 - KO</a></label><br>
+                <label for="7">
+                <input type="radio"value="pt" name="language" id="7"><a>português - PT</a></label><br>
+                <label for="8">
+                <input type="radio"value="zh" name="language" id="8"><a>中文 (简体) - ZH</a></label><br>
+                <label for="9">
+                <input type="radio"value="zh" name="language" id="9"><a>中文 (繁體) - ZH</a></label><br>
+                </div>
+                <div class="dropdowncrrency">
+                <p>Change currency <a class="small">Learn more</a></p><br>
+              $
+                - USD - US Dollar<a class="mid">Change</a>
+            </div>
+            <div class="dropdownflag">
+               <a href="https://ntb.gov.np/" target="_main" ><svg width="35px" height="30px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#22408B" d="M27.796 19L8 5v26h19.796L15.918 19z"/>
+                    <path fill="#DD2F45" d="M25 18L9 7.196V30h16L13.574 18z"/>
+                    <path fill="#FFF" d="m14.291 24.041l.586-.816l-1 .098l.1-1l-.817.586l-.414-.916l-.414.916l-.817-.586l.099 1l-1-.098l.586.816l-.916.414l.916.414l-.586.816l1-.098l-.099 1l.817-.586l.414.916l.414-.916l.817.586l-.1-1l1 .098l-.586-.816l.916-.414zm-1.546-7.147l.001.002l.001-.002l.018.002c1.468 0 2.66-1.13 2.784-2.567a3.2 3.2 0 0 1-1.595 1.442l-.175-.244l.611-.276l-.611-.276l.391-.545l-.668.066l.067-.668l-.546.391l-.276-.612l-.276.612l-.546-.391l.067.668l-.668-.066l.391.545l-.611.276l.611.276l-.167.233a3.203 3.203 0 0 1-1.566-1.431a2.795 2.795 0 0 0 2.763 2.565"/>
+                </svg></a>
+              <p>You are shopping on<br> Amazon.com</p>  
+            </div>
+            <P class="country"><a class="big">Change country and region</a></P>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--box3-->
+         <div class="nav-signin border">
+        <p class="first">Hello, sign in</p>
+        <div class="second"><p>Account and list</p>
+            <svg width="25" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                <path fill="currentColor" d="m8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71"/> 
+            </svg>
+        </div>
+           
+
+         <div class="signindropdown">
+            <div class="signin_header">
+                <div class="main">
+                    <p class="one">See personalized recomendations</p>
+            <button><a href="amazonsignin.html" target="_main" style="color:black">Sign in</a></button>
+           
+            </div>
+                </div>
+            <div class="dropdowncontent">
+                <div class="content1">
+                    <h2>Your Lists</h2>
+                    <li>Create a List</li>
+                    <li>Find a List or registary</li>
+                </div>
+                <div class="content2">
+                    <h2>Your Account</h2>
+                    
+                        <li>Account</li>
+                        <li>Orders</li>
+                        <li>Recommendations</li>
+                        <li>Browsing History</li>
+                        <li>Watchlist</li>
+                        <li>Kindle Unlimited</li>
+                        <li>Content & Devices</li>
+                        <li>Music Library</li>
+                        
+                </div>
+
+            </div>
+        </div>  
+         </div> 
+     
+    
+      
+<!--box4-->
+     <div class="nav-returnandorder border">
+        <p class="first">Returns</p>
+        <p class="second">&Orders</p>
+     </div>
+<!--box4-->
+<div class="cart border">
+    <div class="cart-icon">
+        <svg width="40px" height="30px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"> 
+            <path fill="currentColor" d="M160 96.039v32h304v63.345l-35.5 112.655H149.932L109.932 16H16v32h66.068l40 288.039h329.9L496 196.306V96.039zm16.984 272.305a64.073 64.073 0 0 0-64 64a64 64 0 0 0 128 0a64.072 64.072 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.038 32.038 0 0 1-32 32m224-96a64.073 64.073 0 0 0-64 64a64 64 0 0 0 128 0a64.072 64.072 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.038 32.038 0 0 1-32 32"/> 
+        </svg>Cart
+    </div>
+    </div>
+</div>
+<!--panal-->
+<div class="panel">
+    <div class="panel-all border">
+        <!--<svg width="25px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+            <path fill="currentColor" d="M4 17.27v-1h16v1zm0-4.77v-1h16v1zm0-4.77v-1h16v1z"/> 
+        </svg>All-->
+        <svg width="25px" height="25px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> 
+            <path fill="currentColor" d="M3.497 15.602a.7.7 0 1 1 0 1.398H.7a.7.7 0 1 1 0-1.398zm15.803 0a.7.7 0 1 1 0 1.398H5.529a.7.7 0 1 1 0-1.398zM3.497 9.334a.7.7 0 1 1 0 1.399H.7a.7.7 0 1 1 0-1.399zm15.803 0a.7.7 0 1 1 0 1.399H5.528a.7.7 0 1 1 0-1.399zM3.497 3a.7.7 0 1 1 0 1.398H.7A.7.7 0 1 1 .7 3zM19.3 3a.7.7 0 1 1 0 1.398H5.528a.7.7 0 1 1 0-1.398z"/> 
+        </svg>All
+    </div>
+    <div class="panel-options ">
+        <p class="border">Today's deals</p>
+        <p class="border">Customer Service</p>
+        <p class="border"> Registry</p>
+        <p class="border">Gift cards</p>
+        <p class="border">Sell</p>
+    </div>
+    <div class="sells border">
+        <p>Shop deals in Electronics</p>
+    </div>
+</div>
+</header>
+<main>
+<!--hero-->
+<div class="hero-section">
+    <a href="#" class="control_prev">
+        <svg width="30" height="50px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"> 
+            <path fill="currentColor" d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248s-111 248-248 248m28.9-143.6L209.4 288H392c13.3 0 24-10.7 24-24v-16c0-13.3-10.7-24-24-24H209.4l75.5-72.4c9.7-9.3 9.9-24.8.4-34.3l-11-10.9c-9.4-9.4-24.6-9.4-33.9 0L107.7 239c-9.4 9.4-9.4 24.6 0 33.9l132.7 132.7c9.4 9.4 24.6 9.4 33.9 0l11-10.9c9.5-9.5 9.3-25-.4-34.3"/> 
+        </svg>
+    </a>
+    <a href="#" class="control_next">
+        <svg width="30" height="50px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"> 
+            <path fill="currentColor" d="M256 8c137 0 248 111 248 248S393 504 256 504S8 393 8 256S119 8 256 8m-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4"/> 
+        </svg></a>
+        <!--  -->
+  
+        <ul>
+            <img src="hero_image.jpg" class="sliderimage" alt="">
+            <img src="header1.jpg" class="sliderimage" alt="">
+            <img src="header2.jpg" class="sliderimage" alt="">
+            <img src="header3.jpg" class="sliderimage" alt="">
+            <img src="header6.jpg" class="sliderimage" alt="">
+
+
+        </ul>
+    
+</div>
+<!--shopsection-->
+<div class="mainarea">
+<div class="shopsection">
+<div class="box1 box">
+   <div class="boxcontent">
+    <h2>Stationary</h2>
+    <a href="productdetail.html " target="_main">
+    <div class="box-image" style="background-image: url('bo3.jpg');"></div>
+    </a>
+    <a href="productdetail.html " target="_main">See more.</a>
+   </div>
+</div>
+<div class="box2 box">
+    <div class="boxcontent">
+        <h2>Valentine Gifts</h2>
+        <a href="productdetail.html " target="_main">
+        <div class="box-image" style="background-image: url('box2.jpg');"></div>
+        </a>
+        <a href="productdetail.html " target="_main">See more.</a>
+       </div>
+</div>
+<div class="box3 box"><div class="boxcontent">
+    <h2>Toy under $25</h2>
+    <a href="productdetail.html " target="_main">
+    <div class="box-image" style="background-image: url('box1-3.jpg');"></div>
+</a>
+<a href="productdetail.html " target="_main">See more.</a>
+   </div></div>
+<div class="box4 box">
+    <div class="boxcontent">
+        <h2>Deals in PC</h2>
+        <a href="productdetail.html " target="_main">
+        <div class="box-image" style="background-image: url('box1-4.jpg');"></div>
+        </a>
+        <a href="productdetail.html " target="_main">See more.</a>
+       </div>
+</div>
+<div class="box5 box"><div class="boxcontent">
+    <h2>Grooming Product</h2>
+    <a href="productdetail.html " target="_main">
+    <div class="box-image" style="background-image: url('box2-1.jpg');"></div>
+    </a>
+    <a href="productdetail.html " target="_main">See more.</a>
+   </div>
+</div>
+<div class="box6 box">
+    <div class="boxcontent">
+        <h2>Latest Devices</h2>
+        <a href="productdetail.html " target="_main">
+        <div class="box-image" style="background-image: url('box2-2.jpg');"></div>
+        </a>
+        <a href="productdetail.html " target="_main">See more.</a>
+       </div>
+</div>
+<div class="box7 box"><div class="boxcontent">
+    <h2>Pets Food</h2>
+    <a href="productdetail.html " target="_main">
+    <div class="box-image" style="background-image: url('box2-3.jpg');"></div>
+    </a>
+    <a href="productdetail.html " target="_main">See more.</a>
+   </div></div>
+<div class="box8 box">
+    <div class="boxcontent">
+        <h2>Fashion Mart</h2>
+        <a href="productdetail.html " target="_main">
+        <div class="box-image" style="background-image: url('box2-4.jpg');"></div>
+        </a>
+        <a href="productdetail.html " target="_main">See more.</a>
+       </div>
+</div>
+</div>
+<div class="product_slider1">
+   <h2>Best Sellers in sports and outdoors</h2>
+    <div class="products"> 
+        <a href="productdetail.html " target="_main"><img src="product1-1.jpg" class="size" ></a>
+            <a href="productdetail.html " target="_main"><img src="product1-2.jpg" class="size"></a>
+                <a href="productdetail.html " target="_main"><img src="product1-3.jpg" class="size"></a>
+                    <a href="productdetail.html " target="_main"><img src="product1-5.jpg" class="size"></a>
+                        <a href="productdetail.html " target="_main"><img src="product1-6.jpg" class="size"></a>
+                            <a href="productdetail.html " target="_main"><img src="product1-7.jpg" class="size"></a>
+                                <a href="productdetail.html " target="_main"> <img src="product1-8.jpg" class="size"></a>
+                                    <a href="productdetail.html " target="_main"><img src="product1-9.jpg" class="size"></a>
+                                        <a href="productdetail.html " target="_main"><img src="product1-10.jpg" class="size"></a>
+
+    </div>
+</div>
+<div class="shopsection">
+    <div class="box9 box">
+        <div class="boxcontent">
+        <h2>Stationary</h2>
+        <a href="productdetail.html " target="_main">
+        <div class="box-image" style="background-image: url('bo3.jpg');"></div>
+       
+        </a>
+        <a href="productdetail.html " target="_main">See more</a>
+            </div> </div>
+
+       
+    <div class="box10 box">
+        <div class="boxcontent">
+        <h2>Laptop for study</h2>
+        <a href="productdetail.html " target="_main">
+        <div class="box-image" style="background-image: url('box3-2.jpg');"></div>
+        </a>
+        <a href="productdetail.html " target="_main">See more</a>
+            </div> 
+        </div>
+
+            <div class="box11 box">
+                <div class="boxcontent">
+                <h2>Office chairs</h2>
+                <a href="productdetail.html " target="_main">
+                <div class="box-image" style="background-image: url('box3-3.jpg');"></div>
+                </a>
+                <a href="productdetail.html " target="_main">See more</a>
+                    </div> </div>
+                    <div class="box12 box">
+                        <div class="boxcontent">
+                        <h2>Gaming monitor</h2>
+                        <a href="productdetail.html " target="_main">
+                        <div class="box-image" style="background-image: url('box3-4.jpg');"></div>
+                        </a>
+                        <a href="productdetail.html " target="_main">See more</a>
+                            </div> </div> </div>
+
+
+
+
+
+
+
+            <div class="product_slider2">
+    <h2>Exciting Offers</h2>
+     <div class="products"> 
+        <div class="products-card">
+            <a href="productdetail.html " target="_main">
+            <div class="product_img_container">
+            <img src="product2-1.jpg"  >
+            </div></a>
+            <div class="product-offer">
+                <p>25% off</p>
+                <span>Deal</span>
+            </div>
+            <p class="product-price"><sup>$</sup><span>18.64</span>List price:<del>$24.99</del></p> 
+            <h4>This product is best for you</h4> 
+        </div>
+
+         <div class="products-card">
+            <a href="productdetail.html " target="_main">
+            <div class="product_img_container">
+            <img src="product2-2.jpg"  >
+            </div></a>
+            <div class="product-offer">
+                <p>24% off</p>
+                <span>Deal</span>
+            </div>
+            <p class="product-price"><sup>$</sup><span>45.49</span>List price:<del>$59.98</del></p> 
+            <h4>This product is best for you</h4> 
+        </div><div class="products-card">
+            <a href="productdetail.html " target="_main">
+            <div class="product_img_container">
+            <img src="product2-3.jpg"  >
+            </div></a>
+            <div class="product-offer">
+                <p>24% off</p>
+                <span>Deal</span>
+            </div>
+            <p class="product-price"><sup>$</sup><span>24.00</span>List price:<del>$30.00</del></p> 
+            <h4>This product is best for you</h4> 
+        </div><div class="products-card">
+            <a href="productdetail.html " target="_main">
+
+            <div class="product_img_container">
+            <img src="product2-4.jpg"  >
+            </div></a>
+            <div class="product-offer">
+                <p>38% off</p>
+                <span>Deal</span>
+            </div>
+            <p class="product-price"><sup>$</sup><span>19.96</span>List price:<del>$31.96</del></p> 
+            <h4>This product is best for you</h4> 
+        </div><div class="products-card">
+            <a href="productdetail.html " target="_main">
+            <div class="product_img_container">
+            <img src="product2-6.jpg"  >
+            </div></a>
+            <div class="product-offer">
+                <p>38% off</p>
+                <span>Deal</span>
+            </div>
+            <p class="product-price"><sup>$</sup><span>19.96</span>List price:<del>$31.96</del></p> 
+            <h4>This product is best for you</h4> 
+        </div><div class="products-card">
+            <a href="productdetail.html " target="_main">
+            <div class="product_img_container">
+            <img src="product2-7.jpg"  >
+            </div></a>
+            <div class="product-offer">
+                <p>40% off</p>
+                <span>Deal</span>
+            </div>
+            <p class="product-price"><sup>$</sup><span>13.81</span>List price:<del>$22.98</del></p> 
+            <h4>This product is best for you</h4> 
+        </div><div class="products-card">
+             <a href="productdetail.html " target="_main">
+            <div class="product_img_container">
+               
+            <img src="product2-8.jpg"  >
+            </div></a>
+            <div class="product-offer">
+                <p>22% off</p>
+                <span>Deal</span>
+            </div>
+            <p class="product-price"><sup>$</sup><span>19.47</span>List price:<del>:$24.95</p> 
+            <h4>This product is best for you</h4> 
+        </div><div class="products-card">
+            <a href="productdetail.html " target="_main">
+            <div class="product_img_container">
+            <img src="product2-9.jpg"  >
+            </div></a>
+            <div class="product-offer">
+                <p>23% off</p>
+                <span>Deal</span>
+            </div>
+            <p class="product-price"><sup>$</sup><span>16.99</span>List price:<del>$21.99</del></p> 
+            <h4>This product is best for you</h4> 
+        </div><div class="products-card">
+            <a href="productdetail.html " target="_main">
+            <div class="product_img_container">
+            <img src="product2-10.jpg"  >
+            </div></a>
+            <div class="product-offer">
+                <p>25% off</p>
+                <span>Deal</span>
+            </div>
+            <p class="product-price"><sup>$</sup><span>14.49</span>List price:<del>$19.95</del></p> 
+            <h4>This product is best for you</h4> 
+        </div><div class="products-card">
+            <a href="productdetail.html " target="_main">
+            <div class="product_img_container">
+            <img src="product2-11.jpg"  >
+            </div></a>
+            <div class="product-offer">
+                <p>25% off</p>
+                <span>Deal</span>
+            </div>
+            <p class="product-price">$<span>14.49</span>List price:$19.95</p> 
+            <h5>This product is best for you</h5> 
+        </div><div class="products-card">
+            <a href="productdetail.html " target="_main">
+            <div class="product_img_container">
+            <img src="product2-12.jpg"  >
+            </div></a>
+            <div class="product-offer">
+                <p>19% off</p>
+                <span>Deal</span>
+            </div>
+            <p class="product-price"><sup>$</sup><span>20.36</span>List price:<del>$24.99</del></p> 
+            <h4>This product is best for you</h4> 
+        </div>
+ 
+     </div>
+ </div>
+ <!--multiple pic-->
+ <div class="multiple">
+    <div class="box1 daba">
+        <div class="boxcontent">
+        <h2>Gaming Accesories</h2>
+        <a href="productdetail.html " target="_main">
+        <div class="picture">
+            <img src="product5-1.jpg">
+            <img src="product5-2.jpg">
+            <img src="product5-3.jpg">
+            <img src="product5-4.jpg">
+        </div></a>
+        <a href="productdetail.html " target="_main">See more from amazon gadgets</a></div>
+    </div>
+    <div class="box2 daba">
+        <div class="boxcontent">
+        <h2>Fashion Trend</h2>
+        <a href="productdetail.html " target="_main">
+        <div class="picture">
+            <img src="product7-a.jpg">
+            <img src="product6-2.jpg">
+            <img src="product7-b.jpg">
+            <img src="product6-4.jpg">
+        </div></a>
+        <a href="productdetail.html " target="_main">
+            See all deals</a>
+    </div></div>
+    
+    
+    <div class="box3 daba">
+        <div class="boxcontent">
+        <h2>Warm & welcoming Decor</h2>
+        <a href="productdetail.html " target="_main">
+        <div class="picture">
+            <img src="product7-1.jpg">
+            <img src="product7-2.jpg">
+            <img src="product7-3.jpg">
+            <img src="product7-4.jpg">
+        </div></a>
+        <a href="productdetail.html " target="_main">See more</a>
+    </div></div>
+    <div class="box4 daba" >
+        <div class="boxcontent">
+          
+        <h2>Smartwatches</h2>
+        <a href="productdetail.html " target="_main">
+        <div class="box-image" style="background-image: url(product.jpg);">
+            </div></a>
+            <a href="productdetail.html " target="_main">Shop now</a>
+        </div></div>
+    </div>
+
+</div>
+
+
+
+</main>
+<footer>
+    <div class="signin_footer">
+    <div class="main">
+        <p class="one">See personalized recomendations</p>
+<button><a href="amazonsignin.html" target="_main" style="color:black">Sign in</a></button>
+<p class="two">New customer? <a href="newaccount.html" target="_main">Start here.<a></p>
+</div>
+    </div>
+
+    </div>
+    <div class="footpanel1">
+       <a href="index.html"> Back to Top.</a>
+    </div>
+    <div class="footpanel2">
+        <ul>
+            <p>Get to Know Us</p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Science</a>
+        </ul>
+        <ul>            	
+<p>Make Money with Us</p>
+<a>Sell products on Amazon</a>
+<a>Sell on Amazon Business</a>
+<a>Sell apps on Amazon</a>
+<a>Become an Affiliate</a>
+<a>Advertise Your Products</a>
+<a>Host an Amazon Hub</a>
+
+<a>See More Make Money with Us</a>
+        </ul>
+        <ul>
+            <p>Amazon Payment Products<p>
+<a>Amazon Business Card</a>
+<a>Shop with Points</a>
+<a>Shop with Points</a>
+<a>Amazon Currency Converter</a>
+        </ul>
+        <ul>
+            	
+<p>Let Us Help You</p>
+<a>Amazon and COVID-19</a>
+<a>Your Account</a>
+<a>Your Orders</a>
+<a>Shipping Rates & Policies</a>
+<a>Returns & Replacements</a>
+<a>Help</a> </div>
+
+        </ul>
+     <div class="footpanel3">
+          <div class="ablogo border">
+            <a href="index.html" target="_main"><img src="amazon_logo.png"></a>
+          </div>
+
+    <div class="globe">
+        <svg width="25px" height="24.8px" viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"> 
+            <path fill="currentColor" d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64m324.7-96c-28.6-67.9-86.5-120.4-158-141.6c24.4 33.8 41.2 84.7 50 141.6zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6M487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64M120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64m39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6M19.3 352c28.6 67.9 86.5 120.4 158 141.6c-24.4-33.8-41.2-84.7-50-141.6z"/> 
+        </svg>
+    
+   <p>English</p>
+   <svg width="25" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+    <path fill="currentColor" d="m8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71"/> 
+</svg>
+  </div>
+   
+    <div class="Converter">
+        <svg width="25" height="30" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+            <path fill="currentColor" d="M3 0v1h-.75C1.57 1 1 1.57 1 2.25v.5c0 .68.44 1.24 1.09 1.41l2.56.66c.14.04.34.29.34.44v.5c0 .14-.11.25-.25.25h-2.5a.56.56 0 0 1-.25-.06v-.94h-1v1c0 .34.2.63.44.78c.23.16.52.22.81.22h.75v1h1v-1h.75c.69 0 1.25-.56 1.25-1.25v-.5c0-.68-.44-1.24-1.09-1.41l-2.56-.66C2.2 3.15 2 2.9 2 2.75v-.5c0-.14.11-.25.25-.25h2.5c.11 0 .21.04.25.06V3h1V2c0-.34-.2-.63-.44-.78c-.23-.16-.52-.22-.81-.22H4V0z"/>
+        </svg>
+    <p>USD-U.S Dollar</p>
+    </div>
+  
+   
+    <div class="flag border1" >
+        <a href="https://ntb.gov.np/" target="_main"><svg width="25" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#22408B" d="M27.796 19L8 5v26h19.796L15.918 19z"/>
+            <path fill="#DD2F45" d="M25 18L9 7.196V30h16L13.574 18z"/>
+            <path fill="#FFF" d="m14.291 24.041l.586-.816l-1 .098l.1-1l-.817.586l-.414-.916l-.414.916l-.817-.586l.099 1l-1-.098l.586.816l-.916.414l.916.414l-.586.816l1-.098l-.099 1l.817-.586l.414.916l.414-.916l.817.586l-.1-1l1 .098l-.586-.816l.916-.414zm-1.546-7.147l.001.002l.001-.002l.018.002c1.468 0 2.66-1.13 2.784-2.567a3.2 3.2 0 0 1-1.595 1.442l-.175-.244l.611-.276l-.611-.276l.391-.545l-.668.066l.067-.668l-.546.391l-.276-.612l-.276.612l-.546-.391l.067.668l-.668-.066l.391.545l-.611.276l.611.276l-.167.233a3.203 3.203 0 0 1-1.566-1.431a2.795 2.795 0 0 0 2.763 2.565"/>
+        </svg></a>
+        <a href="https://ntb.gov.np/">Nepal</a>
+    </div>
+   
+
+
+   
+</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
